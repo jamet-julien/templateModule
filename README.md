@@ -7,17 +7,17 @@
 [![npm](https://img.shields.io/npm/l/{PACKAGE}.svg?style=flat-square)](https://github.com/jamet-julien/{PACKAGE}/blob/master/LICENSE)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-> lorem ipsum sit amet
-
-## [Live example](https://codepen.io/jamet-julien)
+lorem ipsum sit amet
 
 -   [Install](#install)
 -   [Importing](#importing)
--   [sample](#sample)
+-   [Quick start](#quick)
+-   [Methods](#methods)
+    -   [.method(`num`)](#method)
 
 ## Install <a id="install"></a>
 
-`npm i {PACKAGE} --save`  
+`npm i {PACKAGE}`  
 or  
 `yarn add {PACKAGE}`
 
@@ -31,17 +31,9 @@ import package from "{PACKAGE}";
 
 ---
 
-### Sample<a id="sample"></a>
+### Quick start<a id="quick"></a>
 
-> usage {PACKAGE} plugin
-
-index.html file
-
-```html
-
-```
-
-script.js file
+usage {PACKAGE} plugin
 
 ```js
 ```
@@ -52,7 +44,7 @@ script.js file
 
 ### .method() <a id="method"></a>
 
-> lorem ipsum sit amet
+lorem ipsum sit amet
 
 | argument | type     | Description |
 | :------- | :------- | :---------- |
