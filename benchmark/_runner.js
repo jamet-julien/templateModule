@@ -53,8 +53,12 @@ const launchBenchmark = (bench) => {
     }
 };
 
-const onHandlerRead = function (err, list) {
-    if (list.length === 0 || err) {
+const onHandlerRead = function (err, list = []) {
+    const listTreat = list.reduce(
+        (g, f) => (~f.indexOf(".js") ? [...g, { name: f, value: f }] : g),
+        []
+    );
+    if (listTreat.length === 0 || err) {
         const textError =
             chalk.red(err) ||
             `${chalk.red("No bench found on dir ")}${chalk.italic.greenBright(
@@ -64,8 +68,8 @@ const onHandlerRead = function (err, list) {
         return false;
     }
 
-    if (list.length === 1) {
-        launchBenchmark(list[0]);
+    if (listTreat.length === 1) {
+        launchBenchmark(listTreat[0]);
         return true;
     }
 
@@ -73,7 +77,7 @@ const onHandlerRead = function (err, list) {
         name: "value",
         message: "Pick your bench to launch",
         limit: 7,
-        choices: list.map((f) => ({ name: f, value: f }))
+        choices: listTreat
     });
 
     prompt.run().then((tests) => {
