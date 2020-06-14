@@ -69,7 +69,7 @@ const onHandlerRead = function (err, list = []) {
     }
 
     if (listTreat.length === 1) {
-        launchBenchmark(listTreat[0]);
+        launchBenchmark(listTreat[0].name);
         return true;
     }
 
