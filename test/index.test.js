@@ -1,4 +1,4 @@
-import Package from "./index";
+import Package from "../src/index";
 
 describe("Start", () => {
     it("First import right", () => {
