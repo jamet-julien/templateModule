@@ -14,6 +14,11 @@ lorem ipsum sit amet
 -   [Quick start](#quick)
 -   [Methods](#methods)
     -   [.method(`num`)](#method)
+-   [Template](#template)
+    -   [Semantic-release](#semantic)
+    -   [Benchmark](#benchmark)
+    -   [Test](#test)
+    -   [Server developpement](#server)
 
 ## Install <a id="install"></a>
 
@@ -23,7 +28,7 @@ or
 
 ---
 
-### Importing <a id="importing"></a>
+## Importing <a id="importing"></a>
 
 ```js
 import package from "{PACKAGE}";
@@ -31,7 +36,7 @@ import package from "{PACKAGE}";
 
 ---
 
-### Quick start<a id="quick"></a>
+## Quick start<a id="quick"></a>
 
 usage {PACKAGE} plugin
 
@@ -52,3 +57,47 @@ lorem ipsum sit amet
 
 ```js
 ```
+
+---
+
+## Template<a id="template"></a>
+
+### Semantic-release<a id="semantic"></a>
+
+install :
+
+```
+npm i -g semantic-release-cli
+```
+
+Create token here [token circleCI](https://app.circleci.com/settings/user/tokens) and run setup :
+
+```
+semantic-release-cli setup
+```
+
+To run **Semantic-release** and create formated commit after `git add` :
+`npm run commit`
+
+### Benchmark<a id="benchmark"></a>
+
+Create file on folder `benchmark/benck/`.
+Export your Suite.
+
+to run benchmark :
+`npm run bench`
+
+### Test<a id="test"></a>
+
+Create file on folder `test/`.
+All test run before commit.
+
+to run test :
+`npm t`
+
+### Server developpement<a id="server"></a>
+
+Create files on folder `demo/` with file entry `index.html`.
+
+To run server (script use **Parcel** library) :
+`npm run dev`

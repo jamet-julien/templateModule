@@ -1,5 +1,5 @@
-const Package = () => {
+export const %PACKAGE% = () => {
     return {};
 };
 
-export default Package;
+export default %PACKAGE%;

@@ -7,6 +7,7 @@ module.exports = {
     output: {
         path: path.join(__dirname, "dist"),
         libraryTarget: "umd",
+        library: "%PACKAGE%",
         filename: "{PACKAGE}.min.js"
     },
     mode: "production",
