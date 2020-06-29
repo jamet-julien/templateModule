@@ -4,7 +4,11 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    background-color: #393e52;
+    background: radial-gradient(
+        circle,
+        rgba(51, 65, 77, 1) 0%,
+        rgba(16, 25, 38, 1) 100%
+    );
     font-family: "Courier New", Courier, arial;
     color: #e4e4e4;
     flex-direction: column;
@@ -12,16 +16,23 @@ body {
     justify-content: center;
 }
 
+.name {
+    font-size: 35px;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+    color: rgb(123, 123, 123);
+}
+
 code {
-    background: #333;
-    padding: 2px;
+    background: #252424;
+    padding: 2px 7px;
 }
 
 .description,
 .install {
     padding: 20px;
     text-align: center;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .popup {
