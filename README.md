@@ -2,6 +2,7 @@
 
 [![CircleCI Status](https://circleci.com/gh/jamet-julien/{PACKAGE}.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/jamet-julien/{PACKAGE})
 ![Codecov](https://img.shields.io/codecov/c/github/jamet-julien/{PACKAGE})
+[![npm](https://img.shields.io/bundlephobia/min/{PACKAGE})](https://www.npmjs.com/package/{PACKAGE})
 [![npm](https://img.shields.io/npm/dt/{PACKAGE}.svg?style=flat-square)](https://www.npmjs.com/package/{PACKAGE})
 [![npm](https://img.shields.io/npm/v/{PACKAGE}.svg?style=flat-square)](https://www.npmjs.com/package/{PACKAGE})
 [![npm](https://img.shields.io/npm/l/{PACKAGE}.svg?style=flat-square)](https://github.com/jamet-julien/{PACKAGE}/blob/master/LICENSE)
